@@ -13,7 +13,7 @@ const formSearch = document.querySelector('.form-search'),
 const citiesApi = 'http://api.travelpayouts.com/data/ru/cities.json',
     proxy = 'https://cors-anywhere.herokuapp.com/',
     API_KEY = 'd7a5da76dd93374c90fdfacd15a6dd10',
-    calendar = 'http://min-prices.aviasales.ru/calendar_preload',
+    calendar = 'https://min-prices.aviasales.ru/calendar_preload',
     MAX_COUNT = 10;
 
 let city = [];
@@ -202,7 +202,6 @@ dropdownCitiesTo.addEventListener('click', (event) => {
 formSearch.addEventListener('submit', (event) => {
     event.preventDefault();
 
-    debugger;
 
     const cityFrom = city.find((item) => inputCitiesFrom.value === item.name);
 
